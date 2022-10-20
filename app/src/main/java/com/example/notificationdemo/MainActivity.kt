@@ -1,6 +1,7 @@
 package com.example.notificationdemo
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import com.example.notificationdemo.screen.MainScreen
@@ -14,6 +15,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             NotificationDemoTheme {
                 MainScreen()
+                Log.d("TAG", "onCreate: 3")
             }
         }
     }
